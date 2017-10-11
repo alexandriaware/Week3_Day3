@@ -25,7 +25,10 @@ namespace Week3_Day3
         
         public string Color { get; set; }
 
-        public double DistanceTraveled { get; }
+        public double DistanceTraveled
+        {
+            get { return this.distanceTraveled; }
+        }
 
 
         //Constructors
@@ -40,11 +43,15 @@ namespace Week3_Day3
             this.carryingCapacity = carryingCapacity;
             this.color = color;
             this.movementSpeed = movementSpeed;
+            this.distanceTraveled = 0d;
         }
 
 
         //Methods
-
+        public void Move()
+        {
+            distanceTraveled += movementSpeed;
+        }
 
     }
 }
