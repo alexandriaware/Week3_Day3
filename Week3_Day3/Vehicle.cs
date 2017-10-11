@@ -48,7 +48,7 @@ namespace Week3_Day3
 
 
         //Methods
-        public void Move()
+        public virtual void Move()
         {
             distanceTraveled += movementSpeed;
         }
