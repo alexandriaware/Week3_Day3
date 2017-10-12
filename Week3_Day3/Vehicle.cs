@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Week3_Day3
 {
-    class Vehicle
+    abstract class Vehicle
     {
         //fields
         protected int seats;
@@ -52,6 +52,8 @@ namespace Week3_Day3
         {
             distanceTraveled += movementSpeed;
         }
+
+        public abstract void StartEngine(int keycode);
 
     }
 }
