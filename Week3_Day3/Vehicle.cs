@@ -53,7 +53,10 @@ namespace Week3_Day3
             distanceTraveled += movementSpeed;
         }
 
-        public abstract void StartEngine(int keycode);
+        public virtual string GetDistanceTraveled()
+        {
+            return "Distance Traveled: " + distanceTraveled + "\n";
+        }
 
     }
 }
